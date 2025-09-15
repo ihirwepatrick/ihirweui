@@ -35,4 +35,30 @@
     <priority>0.2</priority>
   </url>
 
+  <!-- Framer-mapped routes on ihirwe.art -->
+  <url>
+    <loc>https://ihirwe.art/projects</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/contact</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/projects/stone-proof</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/projects/diagnoos-design</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/projects/sinc-web-redesign</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/projects/tonite-music-app</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/projects/closedx</loc>
+  </url>
+  <url>
+    <loc>https://ihirwe.art/projects/waitliz</loc>
+  </url>
+
 </urlset>
