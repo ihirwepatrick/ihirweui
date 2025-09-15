@@ -3,6 +3,7 @@
     { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/favicon.png", "destination": "/favicon.png" },
+    { "source": "/favicon.ico", "destination": "/favicon.png" },
     { "source": "/assets/:path*", "destination": "/assets/:path*" },
     { "source": "/(.*)", "destination": "https://ihirweui.framer.website/$1" }
   ]
