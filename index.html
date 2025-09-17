@@ -54,12 +54,14 @@
   <link rel="dns-prefetch" href="//dribbble.com">
   <link rel="dns-prefetch" href="//behance.net">
   
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
+  <!-- Favicon for browsers and search engines -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Multiple sizes for different use cases -->
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
   <link rel="canonical" href="https://ihirwe.art">
   
   <!-- Structured Data (JSON-LD) -->
@@ -73,6 +75,7 @@
     "description": "Expert UI/UX Designer and Product Designer from Rwanda specializing in user interface design, user experience, and digital product development.",
     "url": "https://ihirwe.art",
     "image": "https://ihirwe.art/assets/me.png",
+    "logo": "https://ihirwe.art/favicon.ico",
     "sameAs": [
       "https://twitter.com/ihirwe_in_designs",
       "https://www.linkedin.com/in/ihirwe-patrick",
@@ -87,7 +90,8 @@
     },
     "worksFor": {
       "@type": "Organization",
-      "name": "UI/UX Rwanda Coding Academy"
+      "name": "UI/UX Rwanda Coding Academy",
+      "logo": "https://ihirwe.art/favicon.ico"
     },
     "knowsAbout": [
       "User Interface Design",
@@ -108,6 +112,21 @@
         "@type": "Country",
         "name": "Rwanda"
       }
+    }
+  }
+  </script>
+
+  <!-- Additional Organization Schema for better logo recognition -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Patrick Ihirwe Portfolio",
+    "url": "https://ihirwe.art",
+    "logo": "https://ihirwe.art/favicon.ico",
+    "founder": {
+      "@type": "Person",
+      "name": "Patrick Ihirwe"
     }
   }
   </script>
