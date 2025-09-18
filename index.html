@@ -56,18 +56,28 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ihirwe.art">
   <meta property="og:site_name" content="Patrick Ihirwe Portfolio">
-  <meta property="og:image" content="https://ihirwe.art/assets/me.png">
+  <meta property="og:image" content="https://ihirwe.art/thumbnail.png">
+  <meta property="og:image:secure_url" content="https://ihirwe.art/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Patrick Ihirwe - UI/UX Designer Rwanda Portfolio Preview">
   <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Patrick Ihirwe - UI/UX Designer Rwanda | Designer in Rwanda | UI Design Rwanda">
   <meta name="twitter:description" content="I'm Patrick Ihirwe, a dedicated UI/UX Designer & Developer based in the vibrant city of Kigali, Rwanda. I specialize in creative design with seamless technical implementation. Expert in UI Design Rwanda, UX Design Rwanda, and digital product development.">
-  <meta name="twitter:image" content="https://ihirwe.art/assets/me.png">
+  <meta name="twitter:image" content="https://ihirwe.art/thumbnail.png">
+  <meta name="twitter:image:alt" content="Patrick Ihirwe - UI/UX Designer Rwanda Portfolio Preview">
   <meta name="twitter:creator" content="@ihirwe_in_designs">
   <meta name="twitter:site" content="@ihirwe_in_designs">
+  
+  <!-- Additional Social Media Meta Tags -->
+  <meta property="article:author" content="Patrick Ihirwe">
+  <meta name="thumbnail" content="https://ihirwe.art/thumbnail.png">
+  <meta name="image" content="https://ihirwe.art/thumbnail.png">
+  <meta itemprop="image" content="https://ihirwe.art/thumbnail.png">
   
   <!-- Additional SEO Meta Tags -->
   <meta name="theme-color" content="#080808">
@@ -89,15 +99,47 @@
   <link rel="dns-prefetch" href="//dribbble.com">
   <link rel="dns-prefetch" href="//behance.net">
   
-  <!-- Favicon for browsers and search engines -->
+  <!-- Enhanced Favicon Setup for Google Search Results -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   
-  <!-- Multiple sizes for different use cases -->
+  <!-- Multiple favicon sizes using favicon.ico -->
   <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico">
   <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
   <link rel="icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="96x96" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="128x128" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="512x512" href="/favicon.ico">
+  
+  <!-- Apple Touch Icons for iOS devices -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileImage" content="/favicon.ico">
+  <meta name="msapplication-square70x70logo" content="/favicon.ico">
+  <meta name="msapplication-square150x150logo" content="/favicon.ico">
+  <meta name="msapplication-wide310x150logo" content="/favicon.ico">
+  <meta name="msapplication-square310x310logo" content="/favicon.ico">
+  
+  <!-- Web App Manifest for Enhanced Icon Display -->
+  <link rel="manifest" href="/manifest.json">
+  
   <link rel="canonical" href="https://ihirwe.art">
+  
+  <!-- URL handling meta tags -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <base href="https://ihirwe.art/">
   
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -109,8 +151,14 @@
     "jobTitle": ["UI/UX Designer Rwanda", "Designer in Rwanda", "UI Designer Rwanda", "UX Designer Rwanda", "Product Designer Rwanda"],
     "description": "I'm Patrick Ihirwe, a dedicated UI/UX Designer & Developer based in the vibrant city of Kigali, Rwanda. I specialize in creative design with seamless technical implementation. Expert in UI Design Rwanda, UX Design Rwanda, and digital product development.",
     "url": "https://ihirwe.art",
-    "image": "https://ihirwe.art/assets/me.png",
-    "logo": "https://ihirwe.art/favicon.ico",
+    "image": "https://ihirwe.art/thumbnail.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ihirwe.art/favicon.ico",
+      "width": 32,
+      "height": 32,
+      "caption": "Patrick Ihirwe Logo - UI/UX Designer Rwanda"
+    },
     "sameAs": [
       "https://twitter.com/ihirwe_in_designs",
       "https://www.linkedin.com/in/ihirwe-patrick",
@@ -158,18 +206,39 @@
   }
   </script>
 
-  <!-- Additional Organization Schema for better logo recognition -->
+  <!-- Enhanced Organization Schema for Google Logo Recognition -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Patrick Ihirwe Portfolio",
+    "alternateName": "Patrick Ihirwe - UI/UX Designer Rwanda",
     "url": "https://ihirwe.art",
-    "logo": "https://ihirwe.art/favicon.ico",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ihirwe.art/favicon.ico",
+      "width": 32,
+      "height": 32,
+      "caption": "Patrick Ihirwe - UI/UX Designer Rwanda Logo"
+    },
+    "image": "https://ihirwe.art/thumbnail.png",
     "founder": {
       "@type": "Person",
       "name": "Patrick Ihirwe"
-    }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Rwanda",
+      "addressRegion": "Kigali",
+      "addressLocality": "Kigali"
+    },
+    "sameAs": [
+      "https://twitter.com/ihirwe_in_designs",
+      "https://www.linkedin.com/in/ihirwe-patrick",
+      "https://dribbble.com/ihirwe_in_designs",
+      "https://behance.net/patrickihirwe"
+      "https://instagram.com/ihirwe_in_designs"
+    ]
   }
   </script>
 
@@ -691,6 +760,53 @@
   </div>
   
   <script>
+    // Route mapping from Framer to ihirwe.art
+    const routeMapping = {
+      '/': '/',
+      '/projects': '/projects',
+      '/contact': '/contact',
+      '/projects/stone-proof': '/projects/stone-proof',
+      '/projects/diagnoos-design': '/projects/diagnoos-design',
+      '/projects/sinc-web-redesign': '/projects/sinc-web-redesign',
+      '/projects/tonite-music-app': '/projects/tonite-music-app',
+      '/projects/closedx': '/projects/closedx',
+      '/projects/waitliz': '/projects/waitliz'
+    };
+
+    // Function to update browser URL without page reload
+    function updateBrowserUrl(path) {
+      const newUrl = window.location.origin + path;
+      if (window.location.href !== newUrl) {
+        window.history.pushState({ path: path }, '', newUrl);
+      }
+    }
+
+    // Function to handle iframe URL changes
+    function handleIframeNavigation() {
+      try {
+        const iframe = document.querySelector('iframe');
+        const iframeUrl = iframe.contentWindow.location.href;
+        const framePath = iframeUrl.replace('https://ihirweui.framer.website', '');
+        
+        // Map the Framer path to our domain path
+        if (routeMapping[framePath]) {
+          updateBrowserUrl(routeMapping[framePath]);
+        }
+      } catch (error) {
+        // Cross-origin restrictions prevent direct access
+        // Use postMessage communication instead
+        console.log('Cross-origin restrictions detected, using alternative method');
+      }
+    }
+
+    // Listen for browser back/forward navigation
+    window.addEventListener('popstate', function(event) {
+      if (event.state && event.state.path) {
+        const iframe = document.querySelector('iframe');
+        iframe.src = 'https://ihirweui.framer.website' + event.state.path;
+      }
+    });
+
     // Ensure iframe can receive all interactions
     document.addEventListener('DOMContentLoaded', function() {
       const iframe = document.querySelector('iframe');
@@ -703,6 +819,13 @@
       const container = iframe.parentElement;
       container.style.pointerEvents = 'none';
       iframe.style.pointerEvents = 'auto';
+      
+      // Set initial URL state
+      const currentPath = window.location.pathname;
+      if (routeMapping[currentPath]) {
+        iframe.src = 'https://ihirweui.framer.website' + currentPath;
+        updateBrowserUrl(currentPath);
+      }
       
       // Add touch event support for mobile
       iframe.addEventListener('touchstart', function(e) {
@@ -722,11 +845,86 @@
       iframe.addEventListener('click', function(e) {
         // Ensure the iframe receives the click
         iframe.focus();
+        
+        // Try to detect navigation changes
+        setTimeout(handleIframeNavigation, 100);
       });
       
       // Handle window resize to ensure iframe stays interactive
       window.addEventListener('resize', function() {
         iframe.focus();
+      });
+
+      // Monitor iframe for navigation changes
+      let lastUrl = iframe.src;
+      setInterval(function() {
+        try {
+          const currentIframeUrl = iframe.contentWindow.location.href;
+          if (currentIframeUrl !== lastUrl) {
+            lastUrl = currentIframeUrl;
+            handleIframeNavigation();
+          }
+        } catch (error) {
+          // Cross-origin restrictions
+        }
+      }, 500);
+
+      // Handle direct URL access
+      const handleDirectNavigation = function() {
+        const path = window.location.pathname;
+        if (routeMapping[path] && iframe.src !== 'https://ihirweui.framer.website' + path) {
+          iframe.src = 'https://ihirweui.framer.website' + path;
+        }
+      };
+
+      // Handle page load with specific routes
+      handleDirectNavigation();
+      
+      // Listen for URL changes (for single-page app behavior)
+      window.addEventListener('hashchange', handleDirectNavigation);
+      window.addEventListener('popstate', function(event) {
+        if (event.state && event.state.path) {
+          iframe.src = 'https://ihirweui.framer.website' + event.state.path;
+        } else {
+          handleDirectNavigation();
+        }
+      });
+    });
+
+    // Additional script to handle right-click and context menu scenarios
+    document.addEventListener('DOMContentLoaded', function() {
+      // Override the default context menu behavior for better URL handling
+      const iframe = document.querySelector('iframe');
+      
+      // Create invisible overlay links for each route
+      const createOverlayLinks = function() {
+        Object.keys(routeMapping).forEach(path => {
+          if (path !== '/') {
+            const link = document.createElement('a');
+            link.href = window.location.origin + path;
+            link.style.position = 'absolute';
+            link.style.left = '-9999px';
+            link.style.visibility = 'hidden';
+            link.setAttribute('data-route', path);
+            document.body.appendChild(link);
+          }
+        });
+      };
+
+      createOverlayLinks();
+
+      // Intercept right-click events and provide correct URLs
+      document.addEventListener('contextmenu', function(e) {
+        // Allow context menu but ensure URLs are correct
+        const currentPath = window.location.pathname;
+        if (routeMapping[currentPath]) {
+          // Update any dynamic links with correct URLs
+          setTimeout(function() {
+            document.querySelectorAll('a[data-route]').forEach(link => {
+              link.href = window.location.origin + link.getAttribute('data-route');
+            });
+          }, 10);
+        }
       });
     });
     

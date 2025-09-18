@@ -1,0 +1,14 @@
+# Netlify redirects file for SPA routing
+# This ensures all routes serve the main index.html file
+
+/projects              /index.html    200
+/contact               /index.html    200
+/projects/stone-proof  /index.html    200
+/projects/diagnoos-design  /index.html    200
+/projects/sinc-web-redesign  /index.html    200
+/projects/tonite-music-app  /index.html    200
+/projects/closedx      /index.html    200
+/projects/waitliz      /index.html    200
+
+# Fallback for any other routes
+/*                     /index.html    200
