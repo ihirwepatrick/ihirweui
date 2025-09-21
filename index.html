@@ -795,9 +795,42 @@
       } catch (error) {
         // Cross-origin restrictions prevent direct access
         // Use postMessage communication instead
-        console.log('Cross-origin restrictions detected, using alternative method');
+        console.log('Cross-origin restrictions detected, using postMessage communication');
       }
     }
+
+    // Listen for messages from the Framer iframe
+    window.addEventListener('message', function(event) {
+      // Verify origin for security
+      if (event.origin !== 'https://ihirweui.framer.website') {
+        return;
+      }
+      
+      // Handle navigation messages from Framer
+      if (event.data.type === 'framer-navigation') {
+        const path = event.data.path;
+        if (routeMapping[path]) {
+          updateBrowserUrl(routeMapping[path]);
+          
+          // Update page title based on route
+          const pageTitles = {
+            '/': 'Patrick Ihirwe - UI/UX Designer Rwanda | Designer in Rwanda | UI Design Rwanda | Portfolio',
+            '/projects': 'Projects - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/contact': 'Contact - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/projects/stone-proof': 'Stone Proof Project - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/projects/diagnoos-design': 'Diagnoos Design Project - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/projects/sinc-web-redesign': 'SINC Web Redesign - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/projects/tonite-music-app': 'Tonite Music App - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/projects/closedx': 'ClosedX Project - Patrick Ihirwe | UI/UX Designer Rwanda',
+            '/projects/waitliz': 'Waitliz Project - Patrick Ihirwe | UI/UX Designer Rwanda'
+          };
+          
+          if (pageTitles[path]) {
+            document.title = pageTitles[path];
+          }
+        }
+      }
+    });
 
     // Listen for browser back/forward navigation
     window.addEventListener('popstate', function(event) {
